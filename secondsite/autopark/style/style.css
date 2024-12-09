@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;1,500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    max-width: 100%;
+    font-size: 24px;
+    font-family: "Bitter", serif;
+}
+:root{
+    --c_o:#E39B14;
+    --f_wB:900;
+    --f_wSB:600;
+    --f_wr:400;
+    --otsyp:19.270833333%;
+    --fifti:2.0833rem;
+    --sto:4.16rem;
+
+    --f_s_h2:1.3333rem;
+
+}
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: var(--c_o);
+    padding-right: var(--otsyp);
+    height: 2.916rem;
+    display: flex;
+    margin-top: 0;
+}
+.navigation{
+  margin-left: auto;
+  padding-right: var(--otsyp);
+}
+.nav-ul{
+    display: flex;
+
+    margin-top: 20px;
+}
+.nav-li{
+    color: white;
+    padding-right: 6.25rem;
+    font-weight: var(--f_wB);
+}
+.last{
+  padding-right: 0;
+}
+.logo-img{
+    width: var(--fifti);
+    height: var(--fifti);
+    padding-top: 10px;
+    margin-left: 19.270833333%;
+}
+
+  
+  .container {
+    width: 61.45%;
+    margin-left: var(--otsyp);
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ffa500;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buttons button:hover {
+    background-color: #ffa500;
+    color: white;
+  }
+  
+  .cards {
+    margin-top: 20px;
+  }
+  
+.card {
+    border: 1px solid #ffa500;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+  }
+  
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ffa500;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+.buttons button:hover {
+    background-color: #ffa500;
+    color: white;
+  }
+  
+.buttons button.active {
+    background-color: #ffa500; /* Оранжевый фон для активных кнопок */
+    color: white; /* Белый текст */
+  }
+  
+.cards {
+    margin-top: 20px;
+    display: grid;
+    grid-auto-flow: row; /* Вертикальное расположение карточек */
+    gap: 10px; /* Расстояние между карточками */
+    
+  }
+.price-button {
+    margin-top: 10px;
+    padding: 0.83rem 2.2rem;
+    background-color: #ffa500;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+  }
+  
+.price-button:hover {
+    background-color: #ff8c00;
+  }
+.card {
+    width: 100%;
+    border: 1px solid #ffa500;
+    padding: 10px;
+    background-color: white;
+    opacity: 1;
+    transform: translateY(0);
+    
+    position: relative;
+    display: flex;
+  }
+  
+.card.hidden {
+    opacity: 0;
+    pointer-events: none;
+    width: 0rem;
+    position: absolute; /* Убираем из потока при скрытии */
+  }
+  
+  
+.cards-p{
+    padding-right: 4rem;
+    margin-left: auto;
+  }
+.card-img{
+    width: 245px;
+    height: 150px;
+  }
+.gg{
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+
+.footer{
+    padding-top: var(--fifti);
+    background-color: var(--c_o);
+    margin-top: var(--fifti);
+    display: flex;
+    padding-bottom: var(--fifti);
+}
+.fo{
+    display: flex;
+    width: 365px;
+    color: white;
+    
+}
+.logo-imgg{
+    width: var(--fifti);
+    height: var(--fifti);
+    padding-top: 10px;
+
+}
+.ppl{
+    padding-left: 0.83rem;
+    margin-top: 10px;
+}
+
+.ppp{
+    color: white;
+    font-size: 0.583rem;
+    width: 16.66rem;
+    margin-left: var(--otsyp);
+    margin-top: 0;
+}
+.pppp{
+    padding-right: var(--otsyp);
+    color: white;
+    font-size: 0.583rem;
+    width: 250px;
+}
+.pp2{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.ss{
+    margin-left: var(--otsyp);
+}
+.pp1{
+    margin-left: 0rem;
+}
+.ds{
+    margin-left: auto;
+    margin-right: var(--otsyp);
+}
+/* Top-bar стили */
+.top-bar {
+  background-color: var(--c_o);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.top-bar p {
+  margin: 0;
+}
+
+.top-bar-right a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.top-bar-right a:hover {
+  text-decoration: underline;
+}
+
+/* Навигация */
+.navigation {
+  padding: 10px 0;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-ul li {
+  margin: 0 15px;
+}
+
+.nav-li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* Адаптация для экрана до 1220px */
+@media (max-width: 1220px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .top-bar-right {
+    margin-top: 5px;
+  }
+
+  .nav-ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .top-bar {
+  background-color: var(--c_o);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.top-bar-right a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.hamburger-menu span {
+  background: black;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+}
+
+.nav-li{
+  padding-right: 0;
+}
+
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  .nav-ul.active {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    margin-left: 7rem;
+    padding-right: 1rem;
+  }
+
+}
+
+@media (max-width: 1350px) {
+  *{
+    font-size: 21px;
+
+  }
+  :root{
+    --otsyp:15%;
+  }
+}
+
+@media (max-width: 1220px) {
+  *{
+    font-size: 20px;
+
+  }
+  :root{
+    --otsyp:15%;
+  }
+}
+
+@media (max-width: 790px) {
+  .footer{
+    flex-direction: column;
+  }
+  .ds{
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: var(--otsyp);
+  }
+
+}
+@media (max-width: 650px) {
+  *{
+    font-size: 19px;
+
+  }
+  :root{
+    --otsyp:10%;
+  }
+}
+@media (max-width: 570px) {
+  *{
+    font-size: 16px;
+
+  }
+  :root{
+    --otsyp:5%;
+  }
+}
+@media (max-width: 450px) {
+  *{
+    font-size: 14px;
+
+  }
+  :root{
+    --otsyp:2%;
+  }
+}
+@media (max-width: 404px) {
+  
+
+}
+@media (max-width: 450px) {
+  *{
+    font-size: 12px;
+
+  }
+  :root{
+    --otsyp:1%;
+  }
+}
+@media (max-width: 350px) {
+  *{
+    font-size: 12px;
+
+  }
+  :root{
+    --otsyp:0%;
+  }
+  header{
+    height: 5rem;
+  }
+}

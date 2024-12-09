@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;1,500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    max-width: 100%;
+    font-size: 24px;
+    font-family: "Bitter", serif;
+}
+:root{
+    --c_o:#E39B14;
+    --f_wB:900;
+    --f_wSB:600;
+    --f_wr:400;
+    --otsyp:19.270833333%;
+    --fifti:2.0833rem;
+    --sto:4.16rem;
+
+    --f_s_h2:1.3333rem;
+
+}
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: var(--c_o);
+    padding-right: var(--otsyp);
+    height: 2.916rem;
+    display: flex;
+    margin-top: 0;
+}
+.navigation{
+  margin-left: auto;
+  padding-right: var(--otsyp);
+}
+.nav-ul{
+    display: flex;
+
+    margin-top: 20px;
+}
+.logo-img{
+    width: var(--fifti);
+    height: var(--fifti);
+    padding-top: 10px;
+    margin-left: 19.270833333%;
+}
+.onys{
+    margin-left: 19.270833333%;
+    margin-top: var(--fifti);
+    font-size: var(--f_s_h2);
+    font-weight: 600;
+    padding-top: var(--fifti);
+}
+.text{
+    margin-left: var(--otsyp);
+    font-size: 0.833rem;
+    width: 49.16rem;
+}
+.FAQ{
+    margin-left: var(--otsyp);
+    width: 49.16rem;
+}
+.content{
+    margin-top: var(--fifti);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px 65px;
+    width: 1180px;
+}
+.content-card{
+    width: 14.58rem;
+    border: 3px solid var(--c_o);
+    height: 100px;
+    border-radius: 0.83rem;
+}
+/*
+.FAQ{
+    background-color: var(--c_o);
+    width: 100%;
+    margin-top: var(--fifti);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.faqq{
+    margin: 0 auto;
+    background-color: white;
+    width:  49.16rem ;
+    box-shadow: 0px 7px 10px 1px #000000;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+
+.container {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: 100%; /* Ширина настраивается автоматически 
+    max-width: 500px; /* Максимальная ширина 
+    
+  
+.headers {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    user-select: none;
+    padding-left:var(--fifti)
+  }
+  
+  .icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding-right: 50px;
+    margin-right: 2rem;
+  }
+  
+  .icon::before,
+  .icon::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 4px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .icon::after {
+    transform: rotate(90deg) translateY(-50%);
+  }
+  
+  .active .icon {
+    transform: rotate(45deg);
+  }
+  
+  .content {
+    display: none;
+    margin-top: 10px;
+    padding-left:var(--fifti);
+    width: 45rem; 
+    max-height: 0;          /* Начальное значение высоты 
+  overflow: hidden;        /* Скрывает содержимое, если оно превышает max-height 
+  transition: max-height 0.5s ease; /* Плавное изменение высоты 
+  margin-top: 10px;
+  }
+  
+  .active + .content {
+    display: block;
+  }
+  .faq1{
+    margin-top: 1rem;
+  }
+  */
+
+  .content-card{
+    display: flex;
+  }
+.services-p{
+    font-size: 0.625rem;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+}
+.services-img{
+    width: 3.333rem;
+    display: block;
+    padding-top: 0.8rem;
+    padding-right: 0.5rem;
+    margin-left: auto;
+    height: 2.666rem;
+}
+.h-ps{
+    font-size:1rem ;
+    font-weight: 600;
+    margin-top: var(--fifti);
+}
+
+.footer{
+    padding-top: var(--fifti);
+    background-color: var(--c_o);
+    margin-top: var(--fifti);
+    display: flex;
+    padding-bottom: var(--fifti);
+}
+.fo{
+    display: flex;
+    width: 365px;
+    color: white;
+    
+}
+.logo-imgg{
+    width: var(--fifti);
+    height: var(--fifti);
+    padding-top: 10px;
+
+}
+.ppl{
+    padding-left: 0.83rem;
+    margin-top: 10px;
+}
+
+.ppp{
+    color: white;
+    font-size: 0.583rem;
+    width: 16.66rem;
+    margin-left: var(--otsyp);
+    margin-top: 0;
+}
+.pppp{
+    margin-left: 22rem;
+    color: white;
+    font-size: 0.583rem;
+    width: 250px;
+}
+.pp2{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.ss{
+    margin-left: var(--otsyp);
+}
+.pp1{
+    margin-left: 0rem;
+}
+/* Top-bar стили */
+.top-bar {
+    background-color: var(--c_o);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .top-bar p {
+    margin: 0;
+  }
+  
+  .top-bar-right a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+  
+  .top-bar-right a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Навигация */
+  .navigation {
+    padding: 10px 0;
+  }
+  
+  .nav-ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .nav-ul li {
+    margin: 0 15px;
+  }
+  
+  .nav-li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+
+
+
+@media (max-width: 1220px) {
+    .top-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .top-bar-right {
+      margin-top: 5px;
+    }
+  
+    .nav-ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .top-bar {
+    background-color: var(--c_o);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .top-bar-right a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  
+  .hamburger-menu span {
+    background: black;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+  }
+  
+  .nav-li{
+    padding-right: 0;
+  }
+  
+    .nav-ul {
+      display: none;
+      flex-direction: column;
+      background-color: white;
+    }
+  
+    .nav-ul.active {
+      display: flex;
+    }
+  
+    .hamburger-menu {
+      display: flex;
+      margin-left: 7rem;
+      padding-right: 1rem;
+    }
+    .serv-ul{
+      justify-content: center;
+      padding-left: 0;
+    }
+    .us{
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .pppp{
+      margin-left: 100%;
+    }
+    .content {
+        margin-top: var(--fifti);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px 65px;
+        width: 1180px;
+        justify-items: center;
+    }
+    .headers{
+        text-align: center;
+    }
+    .FAQ{
+        margin: 0 auto;
+    }
+    .text{
+        width: 80%;
+        margin: 0 auto;
+    }
+  
+  }
+  @media (max-width: 1550px) {
+    *{
+      font-size: 21px;
+  
+    }
+    :root{
+      --otsyp:10%;
+    }
+  }
+  
+  @media (max-width: 1350px) {
+    *{
+      font-size: 21px;
+  
+    }
+    
+  }
+  
+  @media (max-width: 1220px) {
+    *{
+      font-size: 20px;
+  
+    }
+    
+  }
+  @media (max-width:1110px){
+    *{
+      font-size: 18px;
+    }
+    .etap{
+      display: flex;
+      justify-content: center;
+      margin-left: 0;
+    }
+    .pluses {
+      display: flex;
+      justify-content: center;
+      margin-left: 0;
+  }
+  .us {
+    /* margin-left: 0; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .onys {
+    margin-left: 0rem;
+    font-size: var(--f_s_h2);
+    font-weight: 600;
+    text-align: center;
+  }
+  .serv-ul {
+    justify-content: center;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .serv-card3{
+    margin-left: 0;
+  }
+  .serv-card7{
+    margin-left: 0;
+  }
+  }
+  @media (max-width: 1000px){
+    .plu{
+      justify-content: center;
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+    .pluses{
+      flex-direction: column;
+    }
+    .plul{
+      padding-left: 0;
+    }
+    .onys{
+      margin-top: 0;
+    }
+    .oo{
+      margin-top: 15rem;
+    }
+    .pppp{
+      margin-left: 60%;
+    }
+  }
+  @media (max-width: 880px){
+    .pppp{
+      margin-left: 30%;
+    }
+    .e{
+    
+        justify-content: center;
+        padding-left: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+  
+      }
+    .etap{
+      flex-direction: column;
+    }
+    .line2 {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-right: 0;
+      transform: rotate(90deg);
+    }
+    .content{
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 790px) {
+    .footer{
+      flex-direction: column;
+      align-items: center;
+    }
+    .ds{
+      margin-left: 0;
+      margin-right: 0;
+      margin-left: var(--otsyp);
+    }
+    .pppp{
+      margin-left: -7%;
+    }
+  
+  }
+  @media (max-width: 650px) {
+    *{
+      font-size: 19px;
+  
+    }
+    :root{
+      --otsyp:10%;
+    }
+    .plu{
+      grid-template-columns: 1fr;
+    }
+    .plu_1{
+      width: 100%;
+    }
+    .content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @media (max-width: 570px) {
+    
+    .pppp{
+      margin-left: -17%;
+    }
+    :root{
+      --otsyp:5%;
+    }
+    .oo{
+      margin-top: 7rem;
+    }
+    .icon{
+      position: relative;
+      width: 1rem;
+      height: 1rem;
+      display: inline-block;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      padding-right: 20px;
+      margin-right: 1rem;
+    }
+  }
+  @media (max-width: 450px) {
+    
+    :root{
+      --otsyp:2%;
+    }
+    .oo{
+      margin-top: -7rem;
+    }
+  }
+  @media (max-width: 404px) {
+    
+  
+  }
+  @media (max-width: 450px) {
+    
+    :root{
+      --otsyp:1%;
+    }
+  }
+  @media (max-width: 350px) {
+    
+    :root{
+      --otsyp:0%;
+    }
+    header{
+      height: 5rem;
+    }
+    .footer{
+      padding-left: 2rem;
+    }
+    .pppp{
+      margin-left: -6%;
+    }
+    .we{
+      margin-left: 1rem;
+    }
+  }

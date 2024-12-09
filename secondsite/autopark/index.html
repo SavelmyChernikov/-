@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автопарк</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+      <img src="./image/logo.png" alt="logo" class="logo-img">
+      <div class="navigation">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-ul">
+          <li class="nav-li"><a target="_blank" href="/index.html">Главная</a></li>
+          <li class="nav-li"><a target="_blank" href="./secondsite/services/index.html">Услуги</a></li>
+          <li class="nav-li"><a target="_blank" href="./index.html">Автопарк</a></li>
+          
+        </ul>
+      </div>
+    </header>
+  <div class="container">
+    <h1>Наш автопарк</h1>
+
+    <div class="filter">
+      <h2>1. Тип техники (грузоподъёмность)</h2>
+      <div class="buttons" id="capacity-buttons">
+        <button data-capacity="1">1 тонна</button>
+        <button data-capacity="1.5">1.5 тонны</button>
+        <button data-capacity="3">3 тонны</button>
+        <button data-capacity="5">5 тонн</button>
+        <button data-capacity="10">10 тонн</button>
+      </div>
+
+      <h2>2. Выберите машину</h2>
+      <div class="buttons" id="type-buttons">
+        <button data-type="тент">тент</button>
+        <button data-type="фургон">фургон</button>
+        <button data-type="изотерма">изотерма</button>
+        <button data-type="рефрижератор">рефрижератор</button>
+        <button data-type="борт">борт</button>
+      </div>
+    </div>
+
+    <div class="cards" id="vehicle-cards">
+      <div class="card" data-capacity="1" data-type="тент">
+        <div class="gg">
+            <h3>Тент с г/п 1 тонна</h3>
+            <img src="./image/porter_tent 1.png" alt="Тент 1 тонна" class="card-img">
+        </div>
+        
+        <div class="cards-p">
+            <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 1.6 м<br>Высота кузова: 1.6 м<br>Грузоподъёмность: 1000 кг<br>Объём кузова: 7 м³<br>3 европалета</p>
+            <button class="price-button">Уточнить стоимость</button>
+        </div>
+        
+      </div>
+
+
+      <div class="card" data-capacity="1.5" data-type="тент">
+        <div class="gg">
+            <h3>Газель тент с г/п 1.5 тонны</h3>
+            <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/gazel_tent.jpg" alt="Тент 1.5 тонны" class="card-img">
+        </div>
+        
+        <div class="cards-p">
+            <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 1.9 м<br>Высота кузова: 2 м<br>Грузоподъёмность: 1500 кг<br>Объём кузова: 16 м³<br>6 европалет</p>
+            <button class="price-button">Уточнить стоимость</button>
+        </div>
+        
+      </div>
+
+
+      <div class="card" data-capacity="3" data-type="тент">
+        <div class="gg">
+            <h3>Тент с г/п 3 тонны</h3>
+            <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/3_tent.jpg" alt="Тент 3 тонны" class="card-img">
+        </div>
+        
+        <div class="cards-p">
+            <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 2.2 м<br>Высота кузова: 2.2 м<br>Грузоподъёмность: 3000 кг<br>Объём кузова: 20 м³<br>6 европалет</p>
+            <button class="price-button">Уточнить стоимость</button>
+        </div>
+        
+      </div>
+      <div class="card" data-capacity="5" data-type="тент">
+        <div class="gg">
+            <h3>Тент с г/п 5 тонн</h3>
+            <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/5_tent.jpg" alt="Тент 1 тонна" class="card-img">
+        </div>
+        
+        <div class="cards-p">
+            <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 2.4 м<br>Высота кузова: 2.4 м<br>Грузоподъёмность: 5000 кг<br>Объём кузова: 35 м³<br>15 европалет</p>
+            <button class="price-button">Уточнить стоимость</button>
+        </div>
+        
+      </div>
+
+      
+      <div class="card" data-capacity="10" data-type="тент">
+        <div class="gg">
+            <h3>Тент с г/п 10 тонн</h3>
+            <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/10_tent.jpg" alt="Тент 1 тонна" class="card-img">
+        </div>
+        
+        <div class="cards-p">
+            <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 2.4 м<br>Высота кузова: 2.4 м<br>Грузоподъёмность: 10000 кг<br>Объём кузова: 35 м³<br>15 европалета</p>
+            <button class="price-button">Уточнить стоимость</button>
+        </div>
+        
+      </div>
+
+
+      <div class="card" data-capacity="1" data-type="фургон">
+        <div class="gg">
+            <h3>Фургон с г/п 0.7 тонн</h3>
+            <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/kabluk.jpg" alt="Фургон 1 тонна" class="card-img">
+        </div>
+        
+        <div class="cards-p">
+            <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 1.2 м<br>Высота кузова: 1.3 м<br>Грузоподъёмность: 700 кг<br>Объём кузова: 3 м³<br>1 европалета</p>
+            <button class="price-button">Уточнить стоимость</button>
+        </div>
+        
+      </div>
+      <div class="card" data-capacity="1" data-type='фургон'>
+        <div class="gg">
+            <h3>Фургон с г/п 1 тонна</h3>
+            <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/porter_furgon.jpg" alt="Фургон 1 тонна" class="card-img">
+        </div>
+        
+        <div class="cards-p">
+            <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 1.6 м<br>Высота кузова: 1.6 м<br>Грузоподъёмность: 1000 кг<br>Объём кузова: 7 м³<br>3 европалета</p>
+            <button class="price-button">Уточнить стоимость</button>
+        </div>
+        
+      </div>
+
+      
+      <div class="card" data-capacity="1.5" data-type="фургон">
+        <div class="gg">
+            <h3>Фургон с г/п 1.5 тонны</h3>
+            <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/15_furgon.jpg" alt="фургон 1 тонна" class="card-img">
+        </div>
+        
+        <div class="cards-p">
+            <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 1.8 м<br>Высота кузова: 1.7 м<br>Грузоподъёмность: 1500 кг<br>Объём кузова: 7 м³<br>3 европалета</p>
+            <button class="price-button">Уточнить стоимость</button>
+        </div>
+        
+      </div>
+
+
+      <div class="card" data-capacity="1.5" data-type="фургон">
+        <div class="gg">
+            <h3>Газель фургон с г/п 1.5 тонны</h3>
+            <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/gazel_furgon.jpg" alt="фургон тонна" class="card-img">
+        </div>
+        
+        <div class="cards-p">
+            <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 1.9 м<br>Высота кузова: 2 м<br>Грузоподъёмность: 1500 кг<br>Объём кузова: 16 м³<br>6 европалета</p>
+            <button class="price-button">Уточнить стоимость</button>
+        </div>
+        
+      </div>
+      <div class="card" data-capacity="3" data-type="фургон">
+        <div class="gg">
+            <h3>Фургон с г/п 3 тонны</h3>
+            <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/3_furgon.jpg" alt="Тент 1 тонна" class="card-img">
+        </div>
+        
+        <div class="cards-p">
+            <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 2.2 м<br>Высота кузова: 2.2 м<br>Грузоподъёмность: 3000 кг<br>Объём кузова: 20 м³<br>6 европалета</p>
+            <button class="price-button">Уточнить стоимость</button>
+        </div>
+        
+      </div>
+
+      
+      <div class="card" data-capacity="5" data-type='фургон'>
+        <div class="gg">
+            <h3>Фургон с г/п 5 тонн</h3>
+            <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/5_furgon.jpg" alt="Тент 1 тонна" class="card-img">
+        </div>
+        
+        <div class="cards-p">
+            <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 2.4 м<br>Высота кузова: 2.4 м<br>Грузоподъёмность: 5000 кг<br>Объём кузова: 35 м³<br>15 европалета</p>
+            <button class="price-button">Уточнить стоимость</button>
+        </div>
+        
+      </div>
+
+
+      <div class="card" data-capacity="10" data-type="фургон">
+        <div class="gg">
+            <h3>Фургон с г/п 10 тонн</h3>
+            <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/10_furgon.jpg" alt="Тент 1 тонна" class="card-img">
+        </div>
+        
+        <div class="cards-p">
+            <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 2.4 м<br>Высота кузова: 2.4 м<br>Грузоподъёмность: 10000 кг<br>Объём кузова: 35 м³<br>15 европалета</p>
+            <button class="price-button">Уточнить стоимость</button>
+        </div>
+        
+      </div>
+      <div class="card" data-capacity="1" data-type="изотерма">
+        <div class="gg">
+            <h3>Изотерма с г/п 1 тонна</h3>
+            <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/porter_izo.jpg" alt="Тент 1 тонна" class="card-img">
+        </div>
+        
+        <div class="cards-p">
+            <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 1.6 м<br>Высота кузова: 1.6 м<br>Грузоподъёмность: 1000 кг<br>Объём кузова: 7 м³<br>3 европалета</p>
+            <button class="price-button">Уточнить стоимость</button>
+        </div>
+        
+      </div>
+      <div class="card" data-capacity="1.5" data-type="изотерма">
+        <div class="gg">
+            <h3>Газель изотерма с г/п 1.5 тонны</h3>
+            <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/gazel_izo.jpg" alt="Тент 1 тонна" class="card-img">
+        </div>
+        
+        <div class="cards-p">
+            <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 1.9 м<br>Высота кузова: 2 м<br>Грузоподъёмность: 1500 кг<br>Объём кузова: 16 м³<br>6 европалета</p>
+            <button class="price-button">Уточнить стоимость</button>
+        </div>
+      </div>
+
+        <div class="card" data-capacity="3" data-type="изотерма">
+          <div class="gg">
+              <h3>Изотерма с г/п 3 тонны</h3>
+              <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/3_izo.jpg" alt="Тент 1 тонна" class="card-img">
+          </div>
+          
+          <div class="cards-p">
+              <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 2.2 м<br>Высота кузова: 2.2 м<br>Грузоподъёмность: 3000 кг<br>Объём кузова: 20 м³<br>6 европалета</p>
+              <button class="price-button">Уточнить стоимость</button>
+          </div>
+        </div>
+          <div class="card" data-capacity="5" data-type="изотерма">
+            <div class="gg">
+                <h3>Изотерма с г/п 5 тонн</h3>
+                <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/5_izo.jpg" alt="Тент 1 тонна" class="card-img">
+            </div>
+            
+            <div class="cards-p">
+                <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 2.4 м<br>Высота кузова: 2.4 м<br>Грузоподъёмность: 5000 кг<br>Объём кузова: 35 м³<br>15 европалета</p>
+                <button class="price-button">Уточнить стоимость</button>
+            </div>
+        </div>
+          <div class="card" data-capacity="10" data-type="изотерма">
+            <div class="gg">
+                <h3>Изотерма с г/п 10 тонн</h3>
+                <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/10_izo.jpg" alt="Тент 1 тонна" class="card-img">
+            </div>
+            
+            <div class="cards-p">
+                <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 2.4 м<br>Высота кузова: 2.4 м<br>Грузоподъёмность: 10000 кг<br>Объём кузова: 35 м³<br>15 европалета</p>
+                <button class="price-button">Уточнить стоимость</button>
+            </div>
+          </div>
+          <div class="card" data-capacity="1" data-type="рефрижератор">
+            <div class="gg">
+                <h3>Рефрежиратор с г/п 1 тонна</h3>
+                <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/porter_holod.jpg" alt="Тент 1 тонна" class="card-img">
+            </div>
+            
+            <div class="cards-p">
+                <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 1.6 м<br>Высота кузова: 1.6 м<br>Грузоподъёмность: 1000 кг<br>Объём кузова: 7 м³<br>3 европалета</p>
+                <button class="price-button">Уточнить стоимость</button>
+            </div>
+          </div>
+          <div class="card" data-capacity="1.5" data-type="рефрижератор">
+            <div class="gg">
+                <h3>Газель рефрижератор с г/п 1.5 тонны
+                </h3>
+                <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/gazel_holod.jpg" alt="Тент 1 тонна" class="card-img">
+            </div>
+            
+            <div class="cards-p">
+                <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 1.9 м<br>Высота кузова: 2 м<br>Грузоподъёмность: 1500 кг<br>Объём кузова: 16 м³<br>6 европалета</p>
+                <button class="price-button">Уточнить стоимость</button>
+            </div>
+          </div>
+          <div class="card" data-capacity="3" data-type="рефрижератор">
+            <div class="gg">
+                <h3>Рефрежиратор с г/п 3 тонны</h3>
+                <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/3_holod.jpg" alt="Тент 1 тонна" class="card-img">
+            </div>
+            
+            <div class="cards-p">
+                <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 2.2 м<br>Высота кузова: 2.2 м<br>Грузоподъёмность: 3000 кг<br>Объём кузова: 20 м³<br>6 европалета</p>
+                <button class="price-button">Уточнить стоимость</button>
+            </div>
+          </div>
+          <div class="card" data-capacity="5" data-type="рефрижератор">
+            <div class="gg">
+                <h3>Рефрежиратор с г/п 5 тонн</h3>
+                <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/5_holod.jpg" alt="Тент 1 тонна" class="card-img">
+            </div>
+            
+            <div class="cards-p">
+                <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 2.4 м<br>Высота кузова: 2.4 м<br>Грузоподъёмность: 5000 кг<br>Объём кузова: 35 м³<br>15 европалета</p>
+                <button class="price-button">Уточнить стоимость</button>
+            </div>
+          </div>
+          <div class="card" data-capacity="10" data-type="рефрижератор">
+            <div class="gg">
+                <h3>Рефрежиратор с г/п 10 тонн</h3>
+                <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/10_holod.jpg" alt="Тент 1 тонна" class="card-img">
+            </div>
+            
+            <div class="cards-p">
+                <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 2.4 м<br>Высота кузова: 2.4 м<br>Грузоподъёмность: 10000 кг<br>Объём кузова:35 м³<br>15 европалета</p>
+                <button class="price-button">Уточнить стоимость</button>
+            </div>
+          </div>
+          <div class="card" data-capacity="1" data-type="борт">
+            <div class="gg">
+                <h3>Борт с г/п 1 тонна</h3>
+                <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/porter_bort.jpg" alt="Тент 1 тонна" class="card-img">
+            </div>
+            
+            <div class="cards-p">
+                <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 1.6 м<br>Высота кузова: 2 м<br>Грузоподъёмность: 1000 кг<br>Объём кузова: 9 м³<br>3 европалета</p>
+                <button class="price-button">Уточнить стоимость</button>
+            </div>
+          </div>
+          <div class="card" data-capacity="1.5" data-type="борт">
+            <div class="gg">
+                <h3>Газель борт с г/п 1.5 тонны</h3>
+                <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/gazel_bort.jpg" alt="Тент 1 тонна" class="card-img">
+            </div>
+            
+            <div class="cards-p">
+                <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 1.9 м<br>Высота кузова: 2 м<br>Грузоподъёмность: 1500 кг<br>Объём кузова: 16 м³<br>6 европалета</p>
+                <button class="price-button">Уточнить стоимость</button>
+            </div>
+          </div>
+          
+          <div class="card" data-capacity="3" data-type="борт">
+            <div class="gg">
+                <h3>Борт с г/п 3 тонны</h3>
+                <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/3_bort.jpg" alt="Тент 1 тонна" class="card-img">
+            </div>
+            
+            <div class="cards-p">
+                <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 2.4 м<br>Высота кузова: 2 м<br>Грузоподъёмность: 3000 кг<br>Объём кузова: 16 м³<br>15 европалета</p>
+                <button class="price-button">Уточнить стоимость</button>
+            </div>
+          </div>
+          <div class="card" data-capacity="5" data-type="борт">
+            <div class="gg">
+                <h3>Борт с г/п 5 тонн</h3>
+                <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/5_bort.jpg" alt="Тент 1 тонна" class="card-img">
+            </div>
+            
+            <div class="cards-p">
+                <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 2.4 м<br>Высота кузова: 2 м<br>Грузоподъёмность: 5000 кг<br>Объём кузова: 16 м³<br>6 европалета</p>
+                <button class="price-button">Уточнить стоимость</button>
+            </div>
+          </div>
+          <div class="card" data-capacity="10" data-type="борт">
+            <div class="gg">
+                <h3>Борт с г/п 10 тонн</h3>
+                <img src="https://gruzoperevozki-novosibirsk-54.ru/images/cars/10_bort.jpg" alt="Тент 1 тонна" class="card-img">
+            </div>
+            
+            <div class="cards-p">
+                <p align="right"><p align="right" ><strong>Характеристики автомобиля</strong></p><p align="right"><br>Ширина кузова: 1.9 м<br>Высота кузова: 2 м<br>Грузоподъёмность: 10000 кг<br>Объём кузова: 16 м³<br>6 европалета</p>
+                <button class="price-button">Уточнить стоимость</button>
+            </div>
+          </div>
+        
+      </div>
+  </div>
+  </div>
+<div class="footer">
+    <div class="ss">
+        <div class="fo">
+            <img src="./image/logo.png" alt="logo" class="logo-imgg">
+            <p class="ppl">Транспортная компания КАПИТАН</p>
+        </div>
+        <p class="ppp pp1">Самые дешевые услуги грузового автомобильного автотранспорта за километр/час в г. Новосибирск. Работаем недорого, в круглосуточном режиме.</p>
+        <p class="ppp pp1">Данный сайт не является публичной офертой определяемой положениями статьи 437 Гражданского кодекса РФ. Информация, представленная на сайте, несет исключительно ознакомительный характер.</p>
+    </div> 
+    <div class="ds">
+        <p class="pppp pp2">Контактные данные</p>
+        <p class="pppp">8 (***) *** ** **</p>
+        <p class="pppp">8 (***) *** ** **</p>
+        <p class="pppp">Адрес: **** Россия, Новосибирск, этаж * офис ***
+            График работы: Круглосуточно, без выходных
+            *********.ru@yandex.ru</p>
+
+    </div>
+    
+</div>
+  <script src="./script/script.js"></script>
+</body>
+</html>
